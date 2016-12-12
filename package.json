@@ -1,0 +1,35 @@
+{
+  "name": "synth-piano-keyboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gujpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "gulp watch",
+    "styles": "gulp styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/interglobalmedia/rockin-synth.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/rockin-synth/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/rockin-synth#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "normalize.css": "^5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-import": "^9.0.0",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0"
+  }
+}
