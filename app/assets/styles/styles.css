@@ -5,3 +5,6 @@
 
 @import "modules/_background";
 @import "modules/_keys";
+@import "modules/_table";
+@import "modules/_keyCodeTable";
+@import "modules/_footer";

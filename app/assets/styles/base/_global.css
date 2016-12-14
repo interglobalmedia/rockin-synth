@@ -11,3 +11,21 @@ html {
 body, html {
     font-family: sans-serif;
 }
+
+a {
+    color: $mainBlack;
+}
+
+a:hover {
+    color: $mainWesBosYellow;
+    text-decoration: none;
+}
+
+h1, p {
+    text-align: center;
+}
+
+p {
+    font-size: 1.75rem;
+    letter-spacing: 0.1em;
+}
