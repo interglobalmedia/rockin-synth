@@ -88,20 +88,13 @@ kbd {
     letter-spacing: 1px;
     background: $mainWesBosYellow;
 }
-
+/* to account for non-touchscreen browsers */
 .key {
     @media all and (max-width: 767px) {
         width: 8%;
         /* hide keys */
         &:nth-child(1), &:nth-child(2), &:nth-child(3) {
             display: none;
-            @media all and (max-width: 480px) {
-                width: 12%;
-                /* Hide keys */
-                &:nth-child(11), &:nth-child(12), &:nth-child(13), &:nth-child(14) {
-                    display: none;
-                }
-            }
         }
     }
 }

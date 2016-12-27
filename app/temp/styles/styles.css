@@ -618,6 +618,8 @@ kbd {
     background: #ffc600;
 }
 
+/* to account for non-touchscreen browsers */
+
 @media all and (max-width: 767px) {
 
   .key {
@@ -626,17 +628,6 @@ kbd {
 
   .key:nth-child(1), .key:nth-child(2), .key:nth-child(3) {
     display: none;
-  }
-
-  @media all and (max-width: 480px) {
-
-    .key:nth-child(1), .key:nth-child(2), .key:nth-child(3) {
-      width: 12%;/* Hide keys */
-    }
-
-    .key:nth-child(1):nth-child(11), .key:nth-child(1):nth-child(12), .key:nth-child(1):nth-child(13), .key:nth-child(1):nth-child(14), .key:nth-child(2):nth-child(11), .key:nth-child(2):nth-child(12), .key:nth-child(2):nth-child(13), .key:nth-child(2):nth-child(14), .key:nth-child(3):nth-child(11), .key:nth-child(3):nth-child(12), .key:nth-child(3):nth-child(13), .key:nth-child(3):nth-child(14) {
-      display: none;
-    }
   }
 }
 
@@ -677,6 +668,11 @@ table {
     padding: 20px 20px 0 40px;
     font-size: 1.5rem;
     letter-spacing: 0.1em;
+}
+
+tr th.hidden-notes {
+    text-align: left;
+    padding-left: 40px;
 }
 
 .footer {

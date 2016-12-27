@@ -27,3 +27,8 @@
     font-size: 1.5rem;
     letter-spacing: 0.1em;
 }
+
+tr th.hidden-notes {
+    text-align: left;
+    padding-left: 40px;
+}
