@@ -82,12 +82,6 @@ kbd {
     box-shadow: 0 0 10px $mainWesBosYellow;
 }
 
-.sound {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background: $mainWesBosYellow;
-}
 /* to account for non-touchscreen browsers */
 .key {
     @media all and (max-width: 767px) {

@@ -611,13 +611,6 @@ kbd {
     box-shadow: 0 0 10px #ffc600;
 }
 
-.sound {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background: #ffc600;
-}
-
 /* to account for non-touchscreen browsers */
 
 @media all and (max-width: 767px) {
