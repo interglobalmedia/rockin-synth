@@ -1,0 +1,9 @@
+.footer {
+	font-size: 1.75rem;
+	letter-spacing: 0.08rem;
+	min-height: 50px;
+	text-align: center;
+	@media #{$min-480} {
+		font-size: 2rem;
+	}
+}
