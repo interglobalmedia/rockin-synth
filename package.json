@@ -2,36 +2,24 @@
 	"name": "synth-piano-keyboard",
 	"version": "1.0.0",
 	"description": "",
-	"main": "gujpfile.js",
+	"main": "src/index.js",
 	"scripts": {
+		"htmlhint": "htmlhint src/index.html",
 		"lint": "eslint . --ext .js",
 		"fix": "yarn run eslint . --ext .js --fix",
-		"eslint-check": "eslint src | eslint-config-prettier-check",
+		"stylelint": "stylelint **/*.scss",
+		"stylelint:fix": "stylelint --fix **/*.scss",
+		"eslint-check": "eslint . | eslint-config-prettier-check",
 		"format": "yarn run prettier -- --write",
 		"prepare": "husky install",
 		"prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)\"",
-		"validate": "yarn run lint && yarnrun prettier -- --list-different",
-		"precommit": "prettier --write . && git add -A .",
+		"validate": "yarn run lint && yarn run stylelint && yarn run prettier",
+		"prettier-pre-commit": "prettier --write . && git add -A .",
 		"clean": "rm -rf dist/",
 		"cleanAudio": "rm dist/Late_Night_Drive.mp3",
 		"serve": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --node-env development --node-env stag",
 		"predeploy": "webpack --mode production --config config/webpack.prod.config.js --env PLATFORM=production --env VERSION=stag --progress",
 		"deploy": "gh-pages -d dist"
-	},
-	"lint-staged": {
-		"linters": {
-			"*.js": [
-				"eslint"
-			],
-			"*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)": [
-				"prettier --write"
-			]
-		}
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
 	},
 	"repository": {
 		"type": "git",
@@ -82,6 +70,11 @@
 		"prettier": "^2.5.1",
 		"sass-loader": "^12.4.0",
 		"style-loader": "^3.3.1",
+		"stylelint": "^14.3.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-prettier-scss": "^0.0.1",
+		"stylelint-config-standard": "^24.0.0",
+		"stylelint-config-standard-scss": "^3.0.0",
 		"uglifyjs-webpack-plugin": "^2.2.0",
 		"webpack": "5.67.0",
 		"webpack-cli": "^4.9.2",
